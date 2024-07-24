@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/bg.jpg");
+    font-family: "Sora", sans-serif;
+    color: white;
+}
+
+
+nav{
+    font-size: 1rem;
+    padding: 40px;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#typeWriter {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+#typewriter-text {
+    border-right: 2px solid #000;
+    white-space: nowrap; 
+    overflow: hidden;
+    font-size: 2.5rem;
+    animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+    color: #7645d9;
+    text-decoration: underline;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: yellowgreen;
+    }
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: #7645d9;
+    border-bottom: 2px solid yellow;
+}
+
+.home{
+    border-bottom: 2px solid yellow;
+}
+
+#home{
+    color: #7645d9;
+}
+
+
+.introduction{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.introimage{
+    border: 2px solid #7645d9;
+    transform: rotate(4deg);
+    border-radius: 20px;
+    width: 305px;
+    height: 390px;
+}
+
+.introimage:hover{
+    transform: rotate(0);
+}
+
+.introimage img{
+    width: 300px;
+    border-radius: 20px;
+
+}
+
+.introdesc{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+#iam{
+    margin-bottom: 20px;
+}
+
+.cv{
+    padding: 10px 25px;
+    margin-top: 40px;
+    background: none;
+    color: #7645d9;
+    font-size: 1rem;
+    border: 2px solid #7645d9;
+    border-radius: 20px;
+}
+
+.cv:hover{
+    background-color: #7645d9;
+    color: white;
+    cursor: pointer;
+}
+
+.logos i{
+    margin: 30px 5px;
+    
+}
